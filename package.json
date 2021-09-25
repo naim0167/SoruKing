@@ -15,5 +15,8 @@
     "opusscript": "^0.0.8"
   },
   "author": "Yescoders",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "16.10.0"
+  }
 }
