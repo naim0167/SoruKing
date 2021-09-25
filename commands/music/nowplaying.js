@@ -27,7 +27,7 @@ module.exports = {
         embed.setDescription(`Volume **${queue.volume}**%\nDuration **${trackDuration}**\nLoop mode **${methods[queue.repeatMode]}**\nRequested by ${track.requestedBy}`);
 
         embed.setTimestamp();
-        embed.setFooter('গানের জগতে স্বাগতম - Made with ❤️ by Yescoders', message.author.avatarURL({ dynamic: true }));
+        embed.setFooter('Gaaner Bhubone Sagotom - Made with ❤️ by Yescoders', message.author.avatarURL({ dynamic: true }));
 
         message.channel.send({ embeds: [embed] });
     },

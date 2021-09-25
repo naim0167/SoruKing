@@ -7,21 +7,21 @@ player.on('connectionError', (queue, error) => {
 });
 
 player.on('trackStart', (queue, track) => {
-    queue.metadata.send(`শুরু হইয়া গেসে, গান শোন - ${track.title} 🎧`);
+    queue.metadata.send(`Started playing ${track.title} in **${queue.connection.channel.name}** 🎧`);
 });
 
 player.on('trackAdd', (queue, track) => {
-    queue.metadata.send(`${track.title} - এই সঙ্গীতখানা লিস্টে ঢুকায় দেওয়া হইল ✅`);
+    queue.metadata.send(`Track ${track.title} added in the queue ✅`);
 });
 
 player.on('botDisconnect', (queue) => {
-    queue.metadata.send('আমারে মাইরা বাইর করে দিসে কেডা জানি 😭, লিস্ট ফাকা কইরা দিলাম... ❌');
+    queue.metadata.send('I was manually disconnected from the voice channel, clearing queue... ❌');
 });
 
 player.on('channelEmpty', (queue) => {
-    queue.metadata.send('আমারে একলা রাইখা সব জানি কই উদাও হইয়া গেসে , যাইগা আমিও... ❌');
+    queue.metadata.send('Nobody is in the voice channel, leaving the voice channel... ❌');
 });
 
 player.on('queueEnd', (queue) => {
-    queue.metadata.send('লিস্টের সব সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ ✅');
+    queue.metadata.send('I finished reading the whole queue ✅');
 });
