@@ -27,7 +27,7 @@ module.exports = {
             return message.channel.send(`I can't join the voice channel ${message.author}... try again ? ❌`);
         }
 
-        await message.channel.send(`খুজতেছি তোর ${res.playlist ? 'প্লেলিস্ট' : 'গান'}... 🎧`);
+        await message.channel.send(`খুজি তোর ${res.playlist ? 'প্লেলিস্ট' : 'গান'}... 🎧`);
 
         res.playlist ? queue.addTracks(res.tracks) : queue.addTrack(res.tracks[0]);
 
