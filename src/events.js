@@ -23,5 +23,5 @@ player.on('channelEmpty', (queue) => {
 });
 
 player.on('queueEnd', (queue) => {
-    queue.metadata.send('লিস্টের সব সঙ্গীত শেষ শেখ হাসিনার বাংলাদেশ ✅');
+    queue.metadata.send('লিস্টের সব সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ ✅');
 });
