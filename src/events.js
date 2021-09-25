@@ -11,17 +11,17 @@ player.on('trackStart', (queue, track) => {
 });
 
 player.on('trackAdd', (queue, track) => {
-    queue.metadata.send(`Track ${track.title} added in the queue ✅`);
+    queue.metadata.send(`${track.title} এই সঙ্গীতখানা কিউতে ঢুকায় দেওয়া হইল ✅`);
 });
 
 player.on('botDisconnect', (queue) => {
-    queue.metadata.send('I was manually disconnected from the voice channel, clearing queue... ❌');
+    queue.metadata.send('কেডা জানি আমারে মাইরা বাইর করে দিসে 😭, লিস্ট ফাকা চকচকা... ❌');
 });
 
 player.on('channelEmpty', (queue) => {
-    queue.metadata.send('Nobody is in the voice channel, leaving the voice channel... ❌');
+    queue.metadata.send('আমারে একলা রাইখা সব জানি কই গেসে, যাইগা আমিও... ❌');
 });
 
 player.on('queueEnd', (queue) => {
-    queue.metadata.send('I finished reading the whole queue ✅');
+    queue.metadata.send('লিস্টের সব সঙ্গীত শেষ শেখ হাসিনার বাংলাদেশ ✅');
 });
