@@ -6,9 +6,9 @@ player.on('connectionError', (queue, error) => {
     console.log(`Error emitted from the connection ${error.message}`);
 });
 
-// player.on('trackStart', (queue, track) => {
-//     queue.metadata.send(`Started playing ${track.title} in **${queue.connection.channel.name}** 🎧`);
-// });
+player.on('trackStart', (queue, track) => {
+    queue.metadata.send(`Started playing ${track.title} in **${queue.connection.channel.name}** 🎧`);
+});
 
 // player.on('trackAdd', (queue, track) => {
 //     queue.metadata.send(`${track.title} এই সঙ্গীতখানা কিউতে ঢুকায় দেওয়া হইল ✅`);
@@ -23,5 +23,5 @@ player.on('connectionError', (queue, error) => {
 // });
 
 player.on('queueEnd', (queue) => {
-    queue.metadata.send('লিস্টের সব সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ ✅');
+    queue.metadata.send('লিস্টের সকল সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ ✅');
 });

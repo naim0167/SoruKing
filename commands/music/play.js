@@ -24,10 +24,10 @@ module.exports = {
             if (!queue.connection) await queue.connect(message.member.voice.channel);
         } catch {
             await player.deleteQueue(message.guild.id);
-            return message.channel.send(`আমি ভয়েস চ্যানেল এ ঢুকতে পারতেসি নাহ  ${message.author}... আবার চেস্টা করো বৎস  ? ❌`);
+            return message.channel.send(`আমি ভয়েস চ্যানেল এ আসতে পারতেসি নাহ  ${message.author}... আবার চেস্টা করো বৎস ? ❌`);
         }
 
-        await message.channel.send(`খুজি তোমার ${res.playlist ? 'প্লেলিস্ট' : 'সঙ্গীত'}... 🎧`);
+        await message.channel.send(`খুজি তোমাদের ${res.playlist ? 'প্লেলিস্ট' : 'সঙ্গীত'}... 🎧`);
 
         res.playlist ? queue.addTracks(res.tracks) : queue.addTrack(res.tracks[0]);
 
