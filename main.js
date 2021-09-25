@@ -11,11 +11,11 @@ global.client = new Client({
     disableMentions: 'everyone',
 });
 
-// client.config = require('./config');
+client.config = require('./config');
 
 global.player = new Player(client, client.config.opt.discordPlayer);
 
 require('./src/loader');
 require('./src/events');
 
-client.login(process.env.token);
+client.login(client.config.app.token);
