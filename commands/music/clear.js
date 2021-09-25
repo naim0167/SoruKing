@@ -13,6 +13,6 @@ module.exports = {
 
         await queue.clear();
 
-        message.channel.send(`The queue has just been cleared 🗑️`);
+        message.channel.send(`লিস্টের সবগুলারে গুলি কইরা সাফ করে ফেলা হইসে 🗑️`);
     },
 };
