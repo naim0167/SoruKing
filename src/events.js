@@ -7,7 +7,7 @@ player.on('connectionError', (queue, error) => {
 });
 
 player.on('trackStart', (queue, track) => {
-    queue.metadata.send(`Started playing ${track.title} in **${queue.connection.channel.name}** 🎧`);
+    queue.metadata.send(`Started playing ${track.title} 🎧`);
 });
 
 // player.on('trackAdd', (queue, track) => {
@@ -23,5 +23,5 @@ player.on('botDisconnect', (queue) => {
 // });
 
 player.on('queueEnd', (queue) => {
-    queue.metadata.send('লিস্টের সকল সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ ✅');
+    queue.metadata.send('লিস্টের সকল সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ 🇧🇩');
 });
