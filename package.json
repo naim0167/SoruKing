@@ -1,0 +1,19 @@
+{
+  "name": "soruking",
+  "version": "1.0.0",
+  "description": "This is a music bot provider by Yescoders",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "discord-player": "^5.1.0",
+    "discord.js": "^13.1.0",
+    "ffmpeg-static": "^4.4.0",
+    "ms": "^3.0.0-canary.1",
+    "opusscript": "^0.0.8"
+  },
+  "author": "Yescoders",
+  "license": "ISC"
+}
