@@ -27,7 +27,7 @@ module.exports = {
             return message.channel.send(`আমি ভয়েস চ্যানেল এ ঢুকতে পারতেসি নাহ  ${message.author}... আবার চেস্টা করো বৎস  ? ❌`);
         }
 
-        await message.channel.send(`খুজি তোমার ${res.playlist ? 'প্লেলিস্ট' : 'গান'}... 🎧`);
+        await message.channel.send(`খুজি তোমার ${res.playlist ? 'প্লেলিস্ট' : 'সঙ্গীত'}... 🎧`);
 
         res.playlist ? queue.addTracks(res.tracks) : queue.addTrack(res.tracks[0]);
 

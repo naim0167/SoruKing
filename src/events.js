@@ -1,10 +1,10 @@
-// player.on('error', (queue, error) => {
-//     console.log(`Error emitted from the queue ${error.message}`);
-// });
+player.on('error', (queue, error) => {
+    console.log(`Error emitted from the queue ${error.message}`);
+});
 
-// player.on('connectionError', (queue, error) => {
-//     console.log(`Error emitted from the connection ${error.message}`);
-// });
+player.on('connectionError', (queue, error) => {
+    console.log(`Error emitted from the connection ${error.message}`);
+});
 
 // player.on('trackStart', (queue, track) => {
 //     queue.metadata.send(`Started playing ${track.title} in **${queue.connection.channel.name}** 🎧`);
@@ -22,6 +22,6 @@
 //     queue.metadata.send('আমারে একলা রাইখা সব জানি কই গেসে, যাইগা আমিও... ❌');
 // });
 
-// player.on('queueEnd', (queue) => {
-//     queue.metadata.send('লিস্টের সব সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ ✅');
-// });
+player.on('queueEnd', (queue) => {
+    queue.metadata.send('লিস্টের সব সঙ্গীত শেষ, শেখ হাসিনার বাংলাদেশ ✅');
+});
