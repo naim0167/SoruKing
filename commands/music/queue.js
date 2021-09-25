@@ -28,7 +28,7 @@ module.exports = {
         embed.setDescription(`Current ${queue.current.title}\n\n${tracks.slice(0, 5).join('\n')}\n\n${nextSongs}`);
 
         embed.setTimestamp();
-        embed.setFooter('Gaaner Bhubone Sagotom - Made with by Yescoders ❤️', message.author.avatarURL({ dynamic: true }));
+        embed.setFooter('Gaaner Bhubone Sagotom - Made with ❤️ by Yescoders', message.author.avatarURL({ dynamic: true }));
 
         message.channel.send({ embeds: [embed] });
     },
