@@ -1,6 +1,6 @@
 module.exports = {
     name: 'stop',
-    aliases: ['dc'],
+    aliases: ['dc, stop'],
     utilisation: '{prefix}stop',
     voiceChannel: true,
 
@@ -11,6 +11,6 @@ module.exports = {
 
         queue.destroy();
 
-        message.channel.send(` চুপ কর, নাইলে গান শুনাবো 😨`);
+        message.channel.send(`চুপ কর, নাইলে গান শুনাবো 😨`);
     },
 };
